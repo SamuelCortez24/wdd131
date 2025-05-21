@@ -1,14 +1,16 @@
-#menu {
-  display: none;
-}
+@media (min-width: 768px) {
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    width: auto;
+  }
 
-nav {
-  display: flex !important;
-  justify-content: flex-end;
-  gap: 1rem;
-  margin-top: 0;
-}
+  #menu {
+    display: none;
+  }
 
-.grid-container {
-  grid-template-columns: repeat(3, 1fr);
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

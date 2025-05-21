@@ -1,12 +1,12 @@
-// Toggle nav menu (hamburger)
-const menuButton = document.getElementById('menu');
-const nav = document.getElementById('nav');
+// Footer dynamic values
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
 
-menuButton.addEventListener('click', () => {
-  nav.classList.toggle('show');
-  menuButton.textContent = nav.classList.contains('show') ? '✖' : '☰';
+// Hamburger menu toggle
+const menuButton = document.getElementById("menu");
+const nav = document.querySelector("nav");
+
+menuButton.addEventListener("click", () => {
+  nav.classList.toggle("open");
+  menuButton.textContent = nav.classList.contains("open") ? "✖" : "☰";
 });
-
-// Footer dynamic content
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
