@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple Album</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS: Mobile First -->
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" />
+
+  <!-- JS -->
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu" aria-label="Menu">☰</button>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Home</h2>
+    <div class="grid-container">
+      <figure>
+        <img src="images/templo1.jpeg" alt="San Diego California Temple" />
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img src="images/templo2.jpeg" alt="Salt Lake Temple" />
+        <figcaption>Salt Lake City Utah</figcaption>
+      </figure>
+      <figure>
+        <img src="images/templo3.jpeg" alt="Mesa Arizona Temple" />
+        <figcaption>Mesa Arizona</figcaption>
+      </figure>
+      <figure>
+        <img src="images/templo4.jpeg" alt="Provo City Center Temple" />
+        <figcaption>Provo City Center</figcaption>
+      </figure>
+      <figure>
+        <img src="images/templo5.jpeg" alt="Rome Italy Temple" />
+        <figcaption>Rome Italy</figcaption>
+      </figure>
+      <figure>
+        <img src="images/templo6.jpeg" alt="Paris France Temple" />
+        <figcaption>Paris France</figcaption>
+      </figure>
+      <figure>
+        <img src="images/templo7.jpeg" alt="Bern Switzerland Temple" />
+        <figcaption>Bern Switzerland</figcaption>
+      </figure>
+      <figure>
+        <img src="images/templo8.jpeg" alt="Tokyo Japan Temple" />
+        <figcaption>Tokyo Japan</figcaption>
+      </figure>
+      <figure>
+        <img src="images/templo9.jpeg" alt="Accra Ghana Temple" />
+        <figcaption>Accra Ghana</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="year"></span> | Pablo Samuel Cortez 🌍 Uruguay</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

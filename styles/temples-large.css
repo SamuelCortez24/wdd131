@@ -1,0 +1,14 @@
+#menu {
+  display: none;
+}
+
+nav {
+  display: flex !important;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 0;
+}
+
+.grid-container {
+  grid-template-columns: repeat(3, 1fr);
+}
