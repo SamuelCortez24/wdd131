@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <!-- NO CAMBIAR: enlace al CSS -->
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <h1>Product Review</h1>
+  </header>
+
+  <!-- Main Form -->
+  <main>
+    <form id="reviewForm" method="get" action="review.html">
+      <!-- PRODUCTO: select inyectado vía JS -->
+      <div class="form-group">
+        <label for="productSelect">Product Name</label>
+        <select id="productSelect" name="product" required>
+          <option disabled selected>Choose a Product ...</option>
+        </select>
+      </div>
+
+      <!-- RATING: radios inyectados vía JS -->
+      <fieldset class="form-group rating-group">
+        <legend>Overall Rating</legend>
+        <div class="stars">
+          <!-- aquí JS genera 5 inputs + labels de estrellas -->
+        </div>
+      </fieldset>
+
+      <!-- FECHA de instalación -->
+      <div class="form-group">
+        <label for="installDate">Date of Installation</label>
+        <input type="date" id="installDate" name="date" required>
+      </div>
+
+      <!-- FEATURES: checkboxes estáticos -->
+      <fieldset class="form-group checkbox-group">
+        <legend>Which features did you find useful? <span class="small">(Check all that apply)</span></legend>
+        <label><input type="checkbox" id="featureDurability" name="feature" value="Durability"> Durability</label>
+        <label><input type="checkbox" id="featureEase"      name="feature" value="Ease of Use">  Ease of Use</label>
+        <label><input type="checkbox" id="featurePerformance" name="feature" value="Performance"> Performance</label>
+        <label><input type="checkbox" id="featureDesign"    name="feature" value="Design">     Design</label>
+      </fieldset>
+
+      <!-- RESEÑA escrita -->
+      <div class="form-group">
+        <label for="writtenReview">Written Review <span class="small">(Optional)</span></label>
+        <textarea id="writtenReview" name="review" rows="5"></textarea>
+      </div>
+
+      <!-- NOMBRE usuario -->
+      <div class="form-group">
+        <label for="userName">Your Name <span class="small">(Optional)</span></label>
+        <input type="text" id="userName" name="username">
+      </div>
+
+      <!-- BOTÓN enviar -->
+      <div class="form-group">
+        <input type="submit" value="Post Review" class="btn-submit">
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> | Pablo Samuel Cortez 🌍 Uruguay</p>
+    <p>Last Modification: <span id="lastMod"></span></p>
+  </footer>
+
+  <!-- NO CAMBIAR: enlace al JS -->
+  <script src="js/form.js"></script>
+</body>
+</html>

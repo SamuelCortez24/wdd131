@@ -1,0 +1,60 @@
+/* Reset y base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Roboto', sans-serif; background: #f0f0f0; color: #333; }
+
+
+.site-header, .site-footer {
+  background: #3D0C3A;      
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+main {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: #d3cdd9;    
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group { margin-bottom: 1rem; }
+label { display: block; margin-bottom: 0.3rem; }
+
+
+input[type="text"], input[type="date"], select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+.rating-group .stars {
+  display: flex; justify-content: space-between;
+}
+.rating-group input { display: none; }
+.rating-group label {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.rating-group label:hover,
+.rating-group input:checked + label {
+  color: gold;           
+}
+
+.checkbox-group label {
+  display: flex; align-items: center; margin-bottom: 0.5rem;
+}
+.checkbox-group input { margin-right: 0.5rem; }
+
+.btn-submit {
+  width: 100%; padding: 0.7rem;
+  border: none; border-radius: 5px;
+  background: #fff; font-size: 1rem; cursor: pointer;
+}
+.btn-submit:hover { background: #e0e0e0; }
+
+.site-footer p { font-size: 0.9rem; }
+.small { font-size: 0.85rem; font-style: italic; }

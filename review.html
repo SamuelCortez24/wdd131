@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You!</title>
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Thank You for Your Review!</h1>
+  </header>
+  <main style="text-align:center; padding: 2rem;">
+    <p>Your review has been submitted successfully.</p>
+    <p>Total reviews submitted: <span id="counter">0</span></p>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> | Pablo Samuel Cortez 🌍 Uruguay</p>
+    <p>Last Modification: <span id="lastMod"></span></p>
+  </footer>
+  <script>
+    const count    = localStorage.getItem('reviewCount') || 0;
+    const newCount = parseInt(count) + 1;
+    localStorage.setItem('reviewCount', newCount);
+    document.getElementById('counter').textContent = newCount;
+
+    document.getElementById('year').textContent    = new Date().getFullYear();
+    document.getElementById('lastMod').textContent = document.lastModified;
+  </script>
+</body>
+</html>
