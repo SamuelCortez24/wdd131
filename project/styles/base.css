@@ -1,0 +1,9 @@
+/* Reset, tipografía, variables colors */
+:root {
+  --brand-color-dark: #111;
+  --brand-color-light: #fafafa;
+  --accent-color: #007aff;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Helvetica Neue', sans-serif; background: var(--brand-color-light); color: var(--brand-color-dark); }
+a { color: var(--accent-color); text-decoration: none; }

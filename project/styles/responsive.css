@@ -1,0 +1,4 @@
+@media (max-width:600px) {
+  .hero-text h1 { font-size:1.5rem; }
+  .featured-recipes .grid { grid-template-columns: 1fr; }
+}
