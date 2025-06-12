@@ -1,9 +1,45 @@
-/* Reset, tipografía, variables colors */
+/* Reset, Typography, and Color Variables */
 :root {
   --brand-color-dark: #111;
   --brand-color-light: #fafafa;
-  --accent-color: #007aff;
+  --accent-color: #b33951;
+  --highlight-color: #f7c59f;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Roboto', sans-serif;
 }
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: 'Helvetica Neue', sans-serif; background: var(--brand-color-light); color: var(--brand-color-dark); }
-a { color: var(--accent-color); text-decoration: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--brand-color-light);
+  color: var(--brand-color-dark);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+  color: var(--accent-color);
+}
+
+button, .btn {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #992940;
+}

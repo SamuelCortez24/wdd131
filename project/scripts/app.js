@@ -1,6 +1,5 @@
-// scripts/app.js
+// Updated JavaScript for Cooking Delight
 
-// Array of recipes (three items)
 const recipes = [
   {
     id: 1,
@@ -75,7 +74,6 @@ const recipes = [
   }
 ];
 
-// Function to render recipes into a container
 function renderRecipes(containerSelector, recipeArray) {
   const container = document.querySelector(containerSelector);
   if (!container) return;
@@ -97,18 +95,19 @@ function renderRecipes(containerSelector, recipeArray) {
   `).join('');
 }
 
-// Smooth scroll for “Explore Recipes” button (if present)
 function initHeroButton() {
   const btn = document.getElementById('btn-explorar');
   if (btn) {
+    btn.textContent = "Explore Recipes";
     btn.addEventListener('click', () => {
       const featured = document.getElementById('featured') || document.getElementById('all-recipes');
-      featured.scrollIntoView({ behavior: 'smooth' });
+      if (featured) {
+        featured.scrollIntoView({ behavior: 'smooth' });
+      }
     });
   }
 }
 
-// Initialize localStorage visit counters
 function initLocalStorage() {
   const visits = JSON.parse(localStorage.getItem('visits') || '{}');
   recipes.forEach(r => {
@@ -117,7 +116,6 @@ function initLocalStorage() {
   localStorage.setItem('visits', JSON.stringify(visits));
 }
 
-// Contact form handler (on contact.html)
 function initContactForm() {
   const form = document.getElementById('contact-form');
   if (form) {
@@ -135,7 +133,6 @@ function initContactForm() {
   }
 }
 
-// Dynamic year in footer
 function updateYearInFooter() {
   const yearEl = document.getElementById('year');
   if (yearEl) {
@@ -143,10 +140,9 @@ function updateYearInFooter() {
   }
 }
 
-// DOMContentLoaded initialization
 document.addEventListener('DOMContentLoaded', () => {
-  renderRecipes('#recetas-list', recipes);   // For index.html featured
-  renderRecipes('#all-recipes', recipes);     // For recipes.html
+  renderRecipes('#recetas-list', recipes);
+  renderRecipes('#all-recipes', recipes);
   initHeroButton();
   initLocalStorage();
   initContactForm();
