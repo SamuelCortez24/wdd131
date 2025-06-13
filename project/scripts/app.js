@@ -4,7 +4,7 @@ const recipes = [
   {
     id: 1,
     title: "Quinoa Salad",
-    image: "images/receta1.jpg",
+    image: "images/recipie1.jpg",
     description: "A fresh and healthy salad packed with protein.",
     ingredients: [
       "1 cup quinoa",
@@ -28,7 +28,7 @@ const recipes = [
   {
     id: 2,
     title: "Citrus-Glazed Salmon",
-    image: "images/receta2.jpg",
+    image: "images/recipie2.jpg",
     description: "Gourmet salmon fillets with a tangy citrus glaze.",
     ingredients: [
       "4 salmon fillets",
@@ -51,7 +51,7 @@ const recipes = [
   {
     id: 3,
     title: "Gluten-Free Chocolate Tart",
-    image: "images/receta3.jpg",
+    image: "images/recipie3.jpg",
     description: "Decadent chocolate tart with a crispy gluten-free crust.",
     ingredients: [
       "200g dark chocolate",
